@@ -6,7 +6,6 @@ public class SensorData {
     private double latitude;
     private double temperature;
 
-
     public static void main(String[] args) {
         SensorData sensorData = new SensorData();
 

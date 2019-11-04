@@ -1,4 +1,4 @@
-package com.session.designpattern2;
+package com.session.designpattern5;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,6 +8,6 @@ public class Main {
         new DianpingApp(sensorData);
         new XiechengApp(sensorData);
 
-        sensorData.setTemperature(10);
+        sensorData.setLongitude(10);
     }
 }

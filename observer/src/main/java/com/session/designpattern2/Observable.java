@@ -1,7 +1,7 @@
 package com.session.designpattern2;
 
-public interface Observable {
+public interface Observable<T> {
     void registerListener(Observer observer);
     void removeListener(Observer observer);
-    void notifyListeners();
+    void notifyListeners(T data);
 }

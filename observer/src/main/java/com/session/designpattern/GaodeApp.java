@@ -3,10 +3,7 @@ package com.session.designpattern;
 public class GaodeApp {
 
     public void update(double longitude, double latitude, double temperature) {
-        updateMap(longitude, latitude);
+        System.out.println("gaode updated!");
     }
 
-    private void updateMap(double longitude, double latitude) {
-
-    }
 }

@@ -6,16 +6,21 @@ public class SensorData {
     private double latitude;
     private double temperature;
 
+    private GaodeApp gaodeApp = new GaodeApp();
+    private DianpingApp dianpingApp = new DianpingApp();
+    private XiechengApp xiechengApp = new XiechengApp();
+
     public static void main(String[] args) {
         SensorData sensorData = new SensorData();
 
-        GaodeApp gaodeApp = new GaodeApp();
-        DianpingApp dianpingApp = new DianpingApp();
-        XiechengApp xiechengApp = new XiechengApp();
+        sensorData.setLongitude(10);
+    }
 
-        gaodeApp.update(sensorData.getLongitude(), sensorData.getLatitude(), sensorData.getTemperature());
-        dianpingApp.update(sensorData.getLongitude(), sensorData.getLatitude(), sensorData.getTemperature());
-        xiechengApp.update(sensorData.getLongitude(), sensorData.getLatitude(), sensorData.getTemperature());
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+        gaodeApp.update(this.getLongitude(), this.getLatitude(), this.getTemperature());
+        dianpingApp.update(this.getLongitude(), this.getLatitude(), this.getTemperature());
+        xiechengApp.update(this.getLongitude(), this.getLatitude(), this.getTemperature());
     }
 
     public double getLongitude() {

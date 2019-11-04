@@ -4,7 +4,6 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class GaodeApp implements PropertyChangeListener {
-    private SensorData sensorData;
 
     public GaodeApp(SensorData observable) {
         observable.addPropertyChangeListener(this);

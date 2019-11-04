@@ -4,10 +4,8 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class XiechengApp implements Observer {
-    private Observable observable;
 
     public XiechengApp(Observable observable) {
-        this.observable = observable;
         observable.addObserver(this);
     }
 

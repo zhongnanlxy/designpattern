@@ -7,6 +7,6 @@ public class Main {
         new DianpingApp(sensorData);
         new XiechengApp(sensorData);
 
-        sensorData.firePropertyChange("longitude", 10, 11);
+        sensorData.setLongitude(10);
     }
 }

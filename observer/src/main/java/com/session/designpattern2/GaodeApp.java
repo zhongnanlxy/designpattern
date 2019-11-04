@@ -1,10 +1,8 @@
 package com.session.designpattern2;
 
 public class GaodeApp implements Observer {
-    private Observable observable;
 
     public GaodeApp(Observable observable) {
-        this.observable = observable;
         observable.registerListener(this);
     }
 

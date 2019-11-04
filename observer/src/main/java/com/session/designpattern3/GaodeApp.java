@@ -4,10 +4,8 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class GaodeApp implements Observer {
-    private Observable observable;
 
     public GaodeApp(Observable observable) {
-        this.observable = observable;
         observable.addObserver(this);
     }
 

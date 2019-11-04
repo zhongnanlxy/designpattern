@@ -7,8 +7,6 @@ import java.util.Observer;
 
 public class XiechengApp implements PropertyChangeListener {
 
-    private SensorData sensorData;
-
     public XiechengApp(SensorData observable) {
         observable.addPropertyChangeListener(this);
     }

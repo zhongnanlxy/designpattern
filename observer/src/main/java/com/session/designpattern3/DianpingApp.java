@@ -4,10 +4,8 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class DianpingApp implements Observer {
-    private Observable observable;
 
     public DianpingApp(Observable observable) {
-        this.observable = observable;
         observable.addObserver(this);
     }
 

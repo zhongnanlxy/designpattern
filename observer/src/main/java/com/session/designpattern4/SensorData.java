@@ -24,6 +24,7 @@ public class SensorData {
     }
 
     public void setLongitude(double longitude) {
+        firePropertyChange("longitude", this.longitude, longitude);
         this.longitude = longitude;
     }
 
@@ -47,7 +48,7 @@ public class SensorData {
         listeners.firePropertyChange(event);
     }
 
-    public void firePropertyChange(String propertyName, int oldValue, int newValue) {
+    public void firePropertyChange(String propertyName, double oldValue, double newValue) {
         listeners.firePropertyChange(propertyName, oldValue, newValue);
     }
 }
